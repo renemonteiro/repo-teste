@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    margin: 10px 30px ;
+}
+
+.menu{
+    width: 30%;
+    flex:1;
+}
+
+p{
+    display: inline;
+    flex: 3;
+}
+
+ul{
+    display:flex;
+    justify-content:space-around;
+}
+
+li{
+    list-style-type:none;
+}
+
+.background{
+    background-image: url("image/TeamsBG-Office7.jpg");
+    width: 100%;
+    height:300px;
+    position: relative;
+}
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    top:70px;
+}
+div h1{
+        font-size:50px;
+}
+
+.container a {
+    text-decoration:none;
+    color:white;
+    margin-top:10px;
+    text-transform:uppercase;
+    background-color: aqua;
+    border-radius: 4px;
+    padding:5px 10px;
+}
+.container-cards{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items:center;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    display:flex;
+    text-align:center;
+    align-items: center;
+}
+div p{
+    font-size:35px;
+}
+
+@media (max-width: 900px) {
+    .header{
+        background-color: gray;
+    }
+    .container-cards{
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px;
+        height: auto;
+}
+    div h1{
+        font-size:30px;
+    }
+    div p{
+    font-size:20px;
+}
+}
+
+@media (max-width: 600px){
+    .background{
+        height:200px;
+}
+    .header{
+        background-color:blue;
+    }
+     div h1{
+        font-size:20px;
+    }
+     div p{
+         font-size:10px;
+}
+}
