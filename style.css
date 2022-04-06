@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color:black;
 }
+.font1{
+    font-size:40px;
+}
 
 .header{
     display:flex;
@@ -40,18 +43,15 @@ li{
     height:300px;
     position: relative;
 }
-.container{
+.container {
     position: absolute;
     height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    top:70px;
-}
-div h1{
-        font-size:50px;
+    top: 70px;
 }
 
 .container a {
@@ -80,9 +80,6 @@ div h1{
     text-align:center;
     align-items: center;
 }
-div p{
-    font-size:35px;
-}
 
 @media (max-width: 900px) {
     .header{
@@ -93,12 +90,9 @@ div p{
         gap: 5px;
         height: auto;
 }
-    div h1{
-        font-size:30px;
+    .font1{
+        font-size:20px;
     }
-    div p{
-    font-size:20px;
-}
 }
 
 @media (max-width: 600px){
@@ -108,10 +102,7 @@ div p{
     .header{
         background-color:blue;
     }
-     div h1{
-        font-size:20px;
+    .font1{
+        font-size:10px;
     }
-     div p{
-         font-size:10px;
-}
 }
